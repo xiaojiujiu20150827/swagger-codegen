@@ -24,6 +24,15 @@
         <url-pattern>/api/swagger.json</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>GeneratorServlet</servlet-name>
+        <servlet-class>io.swagger.generator.online.GeneratorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GeneratorServlet</servlet-name>
+        <url-pattern>/api/generator.json</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>CORSFilter</filter-name>
         <filter-class>io.swagger.oas.inflector.utils.CORSFilter</filter-class>
